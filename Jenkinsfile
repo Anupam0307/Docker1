@@ -9,7 +9,7 @@ stage ('build')
 steps
 {
 sh 'cd /home/ubuntu/Docker'
-sh 'docker compose up -d'
+sh 'docker compose up '
 
 }
 }
