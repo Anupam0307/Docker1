@@ -1,10 +1,10 @@
 pipeline
 {
-agent
-{
+agent any
+
 stages
 {
-stage('build')
+stage ('build')
 {
 steps
 {
@@ -15,4 +15,4 @@ sh 'docker compose up -d'
 }
 }
 }
-}
+
