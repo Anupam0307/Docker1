@@ -1,0 +1,18 @@
+version : '3'
+services:
+
+ web:
+  build: ./nginx
+  image: nginx_web:latest
+  ports:
+   - "85:80"
+  deploy:
+    replicas: 2
+
+ db:
+  build: ./redis
+  image: redis_db:latest
+  ports:
+   - "6380:6379"
+  deploy:
+   replicas: 4
