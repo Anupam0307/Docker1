@@ -8,7 +8,7 @@ stage ('build')
 {
 steps
 {
-sh 'sudo cd /home/ubuntu/Docker'
+sh 'cd /home/ubuntu/Docker'
 sh 'sudo docker-compose up'
 
 }
